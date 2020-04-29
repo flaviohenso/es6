@@ -1,0 +1,20 @@
+webpack: server para permitir possuir varios arqvuios js dentro do objeto e no final babel mapei esses arquivos para um unico arquivo bable.js
+
+comandos importante:
+    instalacao:
+        yarn add webpack webpack-cli -D
+    
+        ajuste no package.json:
+            devDependecies
+        
+        criar arquivo de configuracao do webpack:
+            webpack.config.js
+
+        instalar o bable-loader:
+            yarn add bable_loader -D
+
+        instalar webpack-dev-server:
+            yarn add webpack-dev-server -D
+
+        criar build para gerar o buble.js para producao:
+            "build": "webpack --mode=production"
