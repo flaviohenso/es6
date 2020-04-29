@@ -13,6 +13,8 @@
   },
   "scripts": {
     "dev": "babel ./main.js -o ./bundle.js -w",
+    "exe1": "babel ./exercicio1.js -o ./bundle1.js -w",
+    "exe2": "babel ./exercicio2.js -o ./bundle2.js -w",
     "test": "jest"
   }
 }
