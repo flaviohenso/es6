@@ -3,7 +3,7 @@ class List {
         this.data = []
     }
 
-    static soma(a,b){
+    static soma(a, b) {
         return a + b
     }
 
@@ -14,13 +14,13 @@ class List {
 }
 
 class TodoList extends List {
-    constructor(){
+    constructor() {
         super()
 
         this.usuario = 'flavio'
     }
 
-    mostraUsuario(){
+    mostraUsuario() {
         console.log(this.usuario)
     }
 
@@ -32,15 +32,15 @@ document.getElementById("btnAdd").onclick = () => {
     MinhaTodo.add()
 }
 
-console.log(List.soma(2,6))
+console.log(List.soma(2, 6))
 
-const arr = [1,2,3,4,5]
+const arr = [1, 2, 3, 4, 5]
 
-const newArr = arr.map( num => num * 2 )
+const newArr = arr.map(num => num * 2)
 
 console.log(newArr)
 
-const teste = () => ({ nome: 'flavio'})
+const teste = () => ({ nome: 'flavio' })
 
 console.log(teste)
 
@@ -58,7 +58,7 @@ const usuario = {
 console.log(usuario.nome)
 console.log(usuario.endereco.cidade)
 
-const { nome ,idade, endereco: {estado}} = usuario
+const { nome, idade, endereco: { estado } } = usuario
 
 console.log(nome)
 console.log(estado)
@@ -71,31 +71,31 @@ const usuarioR = {
     empresa: "flavio henrique"
 }
 
-const {name, ...resto} = usuarioR
+const { name, ...resto } = usuarioR
 
 console.log(name)
 console.log(resto)
 
-const numeros = [1,2,3,4,5]
+const numeros = [1, 2, 3, 4, 5]
 
-const [a,b,...c] = numeros
+const [a, b, ...c] = numeros
 
 console.log(a)
 console.log(b)
 console.log(c)
 
-function soma(...params){
-    return params.reduce((total,next) => total + next)
+function soma(...params) {
+    return params.reduce((total, next) => total + next)
 }
 
-console.log(soma(1,2,3,4,5,6,7))
+console.log(soma(1, 2, 3, 4, 5, 6, 7))
 
 //SPREAD
 
-const arr1 = [1,2,3,4]
-const arr2 = [5,6,7,8]
+const arr1 = [1, 2, 3, 4]
+const arr2 = [5, 6, 7, 8]
 
-const arr3 = [...arr1,...arr2]
+const arr3 = [...arr1, ...arr2]
 
 console.log(arr3)
 
@@ -109,6 +109,10 @@ const usuario2 = {
     }
 }
 
-const usuario3 = {...usuario2, endereco: {cidade: 'sga'}} 
+const usuario3 = { ...usuario2, endereco: { cidade: 'sga' } }
 
 console.log(usuario3)
+
+import { soma2 } from './funcoesBkp'
+
+console.log(soma2(2,8))
