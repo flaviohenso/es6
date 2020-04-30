@@ -1,6 +1,16 @@
-import ClasseUsuario from './functions'
-import { idade as IdadeUsuario} from './functions'
+import axios from 'axios'
 
-console.log(ClasseUsuario.info())
-
-alert(`Minha idade: ${IdadeUsuario} `)
+class Api {
+    static async getUserInfo(username){
+        try {
+            
+        const response = await axios.get(`https://api.github.com/users/${username}`)
+        console.log(response)
+    } catch (error) {
+        console.log('Erro na APi')       
+    }
+       
+    }
+}
+console.log(Api.getUserInfo('flaviohenso'))
+console.log(Api.getUserInfo('flaviohenso23423'))

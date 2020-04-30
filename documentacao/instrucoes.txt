@@ -18,3 +18,12 @@ comandos importante:
 
         criar build para gerar o buble.js para producao:
             "build": "webpack --mode=production"
+
+        Recurso para poder trabalhar com async/await:
+            yarn add @babel/plugin-transform-async-t0-generator -D
+        
+        Recurso necessario para o async/await:
+            yarn add @babel/polyfill -D
+        
+        Axios para acessar recursos de API externas:
+            yarn add axios
